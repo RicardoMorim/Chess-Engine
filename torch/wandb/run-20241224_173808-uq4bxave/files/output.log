@@ -1,0 +1,11 @@
+                                                         
+Epoch 1/25:
+Train Loss: 12.1003
+Val Loss: 11.9277, Val Acc: 0.61%
+Saved new best model with loss: 11.9277
+Epoch 0 Memory: 114.47MB allocated, 144.00MB reserved
+Epoch 2/25:
+Train Loss: 11.7322
+Val Loss: 11.4911, Val Acc: 1.84%
+Saved new best model with loss: 11.4911
+Epoch 1 Memory: 114.47MB allocated, 144.00MB reserved

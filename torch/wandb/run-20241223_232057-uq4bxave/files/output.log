@@ -1,0 +1,40 @@
+Training:   0%|          | 0/56 [00:00<?, ?it/s]C:\Users\Ricar\AppData\Local\Temp\ipykernel_11052\1524367572.py:17: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+                                                                                  
+Epoch 1/25:
+Train Loss: 8.5236
+Val Loss: 7.7930, Val Acc: 3.47%
+Saved new best model with loss: 7.7930
+Epoch 0 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 2/25:
+Train Loss: 6.3450
+Val Loss: 6.2919, Val Acc: 5.45%
+Saved new best model with loss: 6.2919
+Epoch 1 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 3/25:
+Train Loss: 4.9927
+Val Loss: 5.8443, Val Acc: 9.90%
+Saved new best model with loss: 5.8443
+Epoch 2 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 4/25:
+Train Loss: 3.9492
+Val Loss: 5.3650, Val Acc: 16.34%
+Saved new best model with loss: 5.3650
+Epoch 3 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 5/25:
+Train Loss: 2.8359
+Val Loss: 5.0868, Val Acc: 23.27%
+Saved new best model with loss: 5.0868
+Epoch 4 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 6/25:
+Train Loss: 1.9293
+Val Loss: 5.3530, Val Acc: 28.22%
+Epoch 5 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 7/25:
+Train Loss: 1.2919
+Val Loss: 5.5795, Val Acc: 38.12%
+Epoch 6 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 8/25:
+Train Loss: 0.9081
+Val Loss: 5.6035, Val Acc: 42.08%
+Epoch 7 Memory: 113.34MB allocated, 146.00MB reserved

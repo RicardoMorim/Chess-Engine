@@ -1,0 +1,13 @@
+Training:   0%|          | 0/45 [00:00<?, ?it/s]C:\Users\Ricar\AppData\Local\Temp\ipykernel_2904\142315261.py:17: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+                                                                                  
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 1/25:
+Train Loss: 4.1005
+Val Loss: inf, Val Acc: 0.00%
+Epoch 0 Memory: 114.47MB allocated, 170.00MB reserved
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 2/25:
+Train Loss: 3.7934
+Val Loss: inf, Val Acc: 0.00%
+Epoch 1 Memory: 114.47MB allocated, 170.00MB reserved

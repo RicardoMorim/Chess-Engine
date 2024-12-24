@@ -1,0 +1,15 @@
+{"time":"2024-12-24T14:17:30.6994366Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T14:17:30.6994366Z","level":"INFO","msg":"created symlink","path":"c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch\\wandb\\run-20241224_141730-uq4bxave\\logs\\debug-core.log"}
+{"time":"2024-12-24T14:17:30.979177Z","level":"INFO","msg":"created new stream","id":"uq4bxave"}
+{"time":"2024-12-24T14:17:30.979177Z","level":"INFO","msg":"handler: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T14:17:30.979177Z","level":"INFO","msg":"writer: Do: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T14:17:30.979177Z","level":"INFO","msg":"stream: started","id":"uq4bxave"}
+{"time":"2024-12-24T14:17:30.979177Z","level":"INFO","msg":"sender: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T14:17:31.5120184Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T14:22:46.217556Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T14:22:47.2773806Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T14:22:47.9086173Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T14:22:48.0006907Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T14:22:48.1163454Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T14:22:49.0393533Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T14:27:06.0558257Z","level":"INFO","msg":"Pausing system monitor"}

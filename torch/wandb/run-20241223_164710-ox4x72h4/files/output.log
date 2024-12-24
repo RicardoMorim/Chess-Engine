@@ -1,0 +1,683 @@
+W1223 16:47:39.978000 18580 torch\_logging\_internal.py:1034] [6/0] Profiler function <class 'torch.autograd.profiler.record_function'> will be ignored
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] WON'T CONVERT torch_dynamo_resume_in_adamw_at_744 c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\optim\adamw.py line 744
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] due to:
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] Traceback (most recent call last):
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 948, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     result = self._inner_convert(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]              ^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 472, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return _compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils_internal.py", line 84, in wrapper_function
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return StrobelightCompileTimeProfiler.profile_compile_time(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_strobelight\compile_time_profiler.py", line 129, in profile_compile_time
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 817, in _compile
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 636, in compile_inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     out_code = transform_code_object(code, transform)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1185, in transform_code_object
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     transformations(instructions, code_options)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 178, in _fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 582, in transform
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     tracer.run()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2451, in run
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     super().run()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 893, in run
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     while self.step():
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]           ^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 805, in step
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.dispatch_table[inst.opcode](self, inst)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2645, in RETURN_CONST
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self._return(inst)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2627, in _return
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.output.compile_subgraph(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1123, in compile_subgraph
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1318, in compile_and_call_fx_graph
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = self.call_user_compiler(gm)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1409, in call_user_compiler
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1390, in call_user_compiler
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 129, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_gm = compiler_fn(gm, example_inputs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 1951, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(model_, inputs_, config_patches=self.config)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1261, in compile_fx
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1505, in compile_fx
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return aot_autograd(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\backends\common.py", line 69, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 954, in aot_module_simplified
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, _ = create_aot_dispatcher_function(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 687, in create_aot_dispatcher_function
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, fw_metadata = compiler_fn(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                                ^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\_aot_autograd\jit_compile_runtime_wrappers.py", line 168, in aot_dispatch_base
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fw = compiler(fw_module, updated_flat_args)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1410, in fw_compiler_base
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return inner_compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_aot.py", line 84, in debug_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\debug.py", line 304, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 527, in compile_fx_inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_graph = fx_codegen_and_compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 831, in fx_codegen_and_compile
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = graph.compile_to_fn()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1751, in compile_to_fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return self.compile_to_module().call
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1680, in compile_to_module
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                                                              ^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1636, in codegen
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.scheduler = Scheduler(self.buffers)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1364, in __init__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.nodes = [self.create_scheduler_node(n) for n in nodes]
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1462, in create_scheduler_node
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return SchedulerNode(self, node)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 731, in __init__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self._compute_attrs()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 742, in _compute_attrs
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     group_fn = self.scheduler.get_backend(self.node.get_device()).group_fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2663, in get_backend
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.backends[device] = self.create_backend(device)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2651, in create_backend
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     raise RuntimeError(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] RuntimeError: Found NVIDIA GeForce GTX 1050 which is too old to be supported by the triton GPU compiler, which is used as the backend. Triton only supports devices of CUDA Capability >= 7.0, but your device is of CUDA capability 6.1
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] Traceback (most recent call last):
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 948, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     result = self._inner_convert(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]              ^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 472, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return _compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils_internal.py", line 84, in wrapper_function
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return StrobelightCompileTimeProfiler.profile_compile_time(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_strobelight\compile_time_profiler.py", line 129, in profile_compile_time
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 817, in _compile
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 636, in compile_inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     out_code = transform_code_object(code, transform)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1185, in transform_code_object
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     transformations(instructions, code_options)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 178, in _fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 582, in transform
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     tracer.run()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2451, in run
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     super().run()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 893, in run
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     while self.step():
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]           ^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 805, in step
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.dispatch_table[inst.opcode](self, inst)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2645, in RETURN_CONST
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self._return(inst)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2627, in _return
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.output.compile_subgraph(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1123, in compile_subgraph
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1318, in compile_and_call_fx_graph
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = self.call_user_compiler(gm)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1409, in call_user_compiler
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1390, in call_user_compiler
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 129, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_gm = compiler_fn(gm, example_inputs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 1951, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(model_, inputs_, config_patches=self.config)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1261, in compile_fx
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1505, in compile_fx
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return aot_autograd(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\backends\common.py", line 69, in __call__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 954, in aot_module_simplified
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, _ = create_aot_dispatcher_function(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 687, in create_aot_dispatcher_function
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, fw_metadata = compiler_fn(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                                ^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\_aot_autograd\jit_compile_runtime_wrappers.py", line 168, in aot_dispatch_base
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fw = compiler(fw_module, updated_flat_args)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1410, in fw_compiler_base
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return inner_compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_aot.py", line 84, in debug_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\debug.py", line 304, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 527, in compile_fx_inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_graph = fx_codegen_and_compile(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 831, in fx_codegen_and_compile
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = graph.compile_to_fn()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1751, in compile_to_fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return self.compile_to_module().call
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1680, in compile_to_module
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                                                              ^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1636, in codegen
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.scheduler = Scheduler(self.buffers)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1364, in __init__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.nodes = [self.create_scheduler_node(n) for n in nodes]
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1462, in create_scheduler_node
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     return SchedulerNode(self, node)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 731, in __init__
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self._compute_attrs()
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 742, in _compute_attrs
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     group_fn = self.scheduler.get_backend(self.node.get_device()).group_fn
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2663, in get_backend
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     self.backends[device] = self.create_backend(device)
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2651, in create_backend
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]     raise RuntimeError(
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] RuntimeError: Found NVIDIA GeForce GTX 1050 which is too old to be supported by the triton GPU compiler, which is used as the backend. Triton only supports devices of CUDA Capability >= 7.0, but your device is of CUDA capability 6.1
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009] Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+W1223 16:47:49.783000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] WON'T CONVERT _multi_tensor_adamw c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\optim\adamw.py line 441
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] due to:
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] Traceback (most recent call last):
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 948, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     result = self._inner_convert(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]              ^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 472, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return _compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils_internal.py", line 84, in wrapper_function
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return StrobelightCompileTimeProfiler.profile_compile_time(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_strobelight\compile_time_profiler.py", line 129, in profile_compile_time
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 817, in _compile
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 636, in compile_inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     out_code = transform_code_object(code, transform)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1185, in transform_code_object
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     transformations(instructions, code_options)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 178, in _fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 582, in transform
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     tracer.run()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2451, in run
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     super().run()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 893, in run
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     while self.step():
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]           ^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 805, in step
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.dispatch_table[inst.opcode](self, inst)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2645, in RETURN_CONST
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self._return(inst)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2627, in _return
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.output.compile_subgraph(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1123, in compile_subgraph
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1318, in compile_and_call_fx_graph
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = self.call_user_compiler(gm)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1409, in call_user_compiler
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1390, in call_user_compiler
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 129, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_gm = compiler_fn(gm, example_inputs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 1951, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(model_, inputs_, config_patches=self.config)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1261, in compile_fx
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1505, in compile_fx
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return aot_autograd(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\backends\common.py", line 69, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 954, in aot_module_simplified
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, _ = create_aot_dispatcher_function(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 687, in create_aot_dispatcher_function
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, fw_metadata = compiler_fn(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                                ^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\_aot_autograd\jit_compile_runtime_wrappers.py", line 168, in aot_dispatch_base
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fw = compiler(fw_module, updated_flat_args)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1410, in fw_compiler_base
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return inner_compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_aot.py", line 84, in debug_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\debug.py", line 304, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 527, in compile_fx_inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_graph = fx_codegen_and_compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 831, in fx_codegen_and_compile
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = graph.compile_to_fn()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1751, in compile_to_fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return self.compile_to_module().call
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1680, in compile_to_module
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                                                              ^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1636, in codegen
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.scheduler = Scheduler(self.buffers)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1364, in __init__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.nodes = [self.create_scheduler_node(n) for n in nodes]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1462, in create_scheduler_node
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return SchedulerNode(self, node)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 731, in __init__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self._compute_attrs()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 742, in _compute_attrs
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     group_fn = self.scheduler.get_backend(self.node.get_device()).group_fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2663, in get_backend
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.backends[device] = self.create_backend(device)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2651, in create_backend
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     raise RuntimeError(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] RuntimeError: Found NVIDIA GeForce GTX 1050 which is too old to be supported by the triton GPU compiler, which is used as the backend. Triton only supports devices of CUDA Capability >= 7.0, but your device is of CUDA capability 6.1
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] Traceback (most recent call last):
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 948, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     result = self._inner_convert(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]              ^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 472, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return _compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils_internal.py", line 84, in wrapper_function
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return StrobelightCompileTimeProfiler.profile_compile_time(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_strobelight\compile_time_profiler.py", line 129, in profile_compile_time
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 817, in _compile
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     guarded_code = compile_inner(code, one_graph, hooks, transform)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 636, in compile_inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     out_code = transform_code_object(code, transform)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1185, in transform_code_object
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     transformations(instructions, code_options)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 178, in _fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\convert_frame.py", line 582, in transform
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     tracer.run()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2451, in run
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     super().run()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 893, in run
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     while self.step():
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]           ^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 805, in step
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.dispatch_table[inst.opcode](self, inst)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2645, in RETURN_CONST
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self._return(inst)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2627, in _return
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.output.compile_subgraph(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1123, in compile_subgraph
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1318, in compile_and_call_fx_graph
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = self.call_user_compiler(gm)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1409, in call_user_compiler
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\output_graph.py", line 1390, in call_user_compiler
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = compiler_fn(gm, self.example_inputs())
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 129, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_gm = compiler_fn(gm, example_inputs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 1951, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(model_, inputs_, config_patches=self.config)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1261, in compile_fx
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return compile_fx(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1505, in compile_fx
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return aot_autograd(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\backends\common.py", line 69, in __call__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 954, in aot_module_simplified
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, _ = create_aot_dispatcher_function(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\aot_autograd.py", line 687, in create_aot_dispatcher_function
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn, fw_metadata = compiler_fn(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                                ^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_functorch\_aot_autograd\jit_compile_runtime_wrappers.py", line 168, in aot_dispatch_base
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fw = compiler(fw_module, updated_flat_args)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 1410, in fw_compiler_base
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return inner_compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\repro\after_aot.py", line 84, in debug_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\debug.py", line 304, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return fn(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 527, in compile_fx_inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_graph = fx_codegen_and_compile(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 81, in inner
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return func(*args, **kwds)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\compile_fx.py", line 831, in fx_codegen_and_compile
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     compiled_fn = graph.compile_to_fn()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1751, in compile_to_fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return self.compile_to_module().call
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1680, in compile_to_module
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                                                              ^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\graph.py", line 1636, in codegen
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.scheduler = Scheduler(self.buffers)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                      ^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_dynamo\utils.py", line 231, in time_wrapper
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     r = func(*args, **kwargs)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]         ^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1364, in __init__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.nodes = [self.create_scheduler_node(n) for n in nodes]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 1462, in create_scheduler_node
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     return SchedulerNode(self, node)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 731, in __init__
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self._compute_attrs()
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 742, in _compute_attrs
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     group_fn = self.scheduler.get_backend(self.node.get_device()).group_fn
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2663, in get_backend
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     self.backends[device] = self.create_backend(device)
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]   File "c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_inductor\scheduler.py", line 2651, in create_backend
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]     raise RuntimeError(
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] RuntimeError: Found NVIDIA GeForce GTX 1050 which is too old to be supported by the triton GPU compiler, which is used as the backend. Triton only supports devices of CUDA Capability >= 7.0, but your device is of CUDA capability 6.1
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009] Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+W1223 16:47:52.752000 18580 torch\_dynamo\convert_frame.py:1009]
+Epoch 0 Memory: 214.85MB allocated, 272.00MB reserved
+Epoch 1 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 2 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 3 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 4 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 5 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 6 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 7 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 8 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 9 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 10 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 11 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 12 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 13 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 14 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 15 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 16 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 17 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 18 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 19 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 20 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 21 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 22 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 23 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 24 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 25 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 26 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 27 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 28 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 29 Memory: 214.85MB allocated, 402.00MB reserved
+Epoch 30 Memory: 214.85MB allocated, 402.00MB reserved
+[{"name": "ChessDataset", "type": "type", "fullType": "type"}, {"name": "ChessModel", "type": "type", "fullType": "type"}, {"name": "ChessVocabulary", "type": "type", "fullType": "type"}, {"name": "DataLoader", "type": "type", "fullType": "type"}, {"name": "LIMIT_OF_FILES", "type": "int", "fullType": "int"}, {"name": "accumulation_steps", "type": "int", "fullType": "int"}, {"name": "best_loss", "type": "float", "fullType": "float"}, {"name": "configure_training", "type": "function", "fullType": "function"}, {"name": "create_input_for_nn", "type": "function", "fullType": "function"}, {"name": "criterion", "type": "CrossEntropyLoss", "fullType": "torch.nn.modules.loss.CrossEntropyLoss"}, {"name": "cudnn", "type": "CudnnModule", "fullType": "torch.backends.cudnn.CudnnModule"}, {"name": "device", "type": "device", "fullType": "torch.device"}, {"name": "encode_moves", "type": "function", "fullType": "function"}, {"name": "epoch", "type": "int", "fullType": "int"}, {"name": "file", "type": "str", "fullType": "str"}, {"name": "files", "type": "list", "fullType": "list"}, {"name": "games", "type": "list", "fullType": "list"}, {"name": "gc", "type": "module", "fullType": "module"}, {"name": "i", "type": "int", "fullType": "int"}, {"name": "load_pgn", "type": "function", "fullType": "function"}, {"name": "log_memory_usage", "type": "function", "fullType": "function"}, {"name": "manage_memory", "type": "function", "fullType": "function"}, {"name": "model", "type": "ChessModel", "fullType": "model.ChessModel"}, {"name": "moves", "type": "ndarray", "fullType": "numpy.ndarray"}, {"name": "nn", "type": "module", "fullType": "module"}, {"name": "optim", "type": "module", "fullType": "module"}, {"name": "optimizer", "type": "AdamW", "fullType": "torch.optim.adamw.AdamW"}, {"name": "os", "type": "module", "fullType": "module"}, {"name": "pgn", "type": "module", "fullType": "module"}, {"name": "scaler", "type": "GradScaler", "fullType": "torch.cuda.amp.grad_scaler.GradScaler"}, {"name": "scheduler", "type": "ReduceLROnPlateau", "fullType": "torch.optim.lr_scheduler.ReduceLROnPlateau"}, {"name": "torch", "type": "module", "fullType": "module"}, {"name": "tqdm", "type": "type", "fullType": "type"}, {"name": "train_epoch", "type": "function", "fullType": "function"}, {"name": "train_loader", "type": "DataLoader", "fullType": "torch.utils.data.dataloader.DataLoader"}, {"name": "train_loss", "type": "float", "fullType": "float"}, {"name": "train_test_split", "type": "function", "fullType": "function"}, {"name": "val_acc", "type": "float", "fullType": "float"}, {"name": "val_loader", "type": "DataLoader", "fullType": "torch.utils.data.dataloader.DataLoader"}, {"name": "val_loss", "type": "float", "fullType": "float"}, {"name": "validate", "type": "function", "fullType": "function"}, {"name": "vocab", "type": "ChessVocabulary", "fullType": "ChessVocabulary.ChessVocabulary"}, {"name": "wandb", "type": "module", "fullType": "module"}]
+[{"name": "ChessDataset", "type": "type", "fullType": "type"}, {"name": "ChessModel", "type": "type", "fullType": "type"}, {"name": "ChessVocabulary", "type": "type", "fullType": "type"}, {"name": "DataLoader", "type": "type", "fullType": "type"}, {"name": "LIMIT_OF_FILES", "type": "int", "fullType": "int"}, {"name": "accumulation_steps", "type": "int", "fullType": "int"}, {"name": "best_loss", "type": "float", "fullType": "float"}, {"name": "configure_training", "type": "function", "fullType": "function"}, {"name": "create_input_for_nn", "type": "function", "fullType": "function"}, {"name": "criterion", "type": "CrossEntropyLoss", "fullType": "torch.nn.modules.loss.CrossEntropyLoss"}, {"name": "cudnn", "type": "CudnnModule", "fullType": "torch.backends.cudnn.CudnnModule"}, {"name": "device", "type": "device", "fullType": "torch.device"}, {"name": "encode_moves", "type": "function", "fullType": "function"}, {"name": "epoch", "type": "int", "fullType": "int"}, {"name": "file", "type": "str", "fullType": "str"}, {"name": "files", "type": "list", "fullType": "list"}, {"name": "games", "type": "list", "fullType": "list"}, {"name": "gc", "type": "module", "fullType": "module"}, {"name": "i", "type": "int", "fullType": "int"}, {"name": "load_pgn", "type": "function", "fullType": "function"}, {"name": "log_memory_usage", "type": "function", "fullType": "function"}, {"name": "manage_memory", "type": "function", "fullType": "function"}, {"name": "model", "type": "ChessModel", "fullType": "model.ChessModel"}, {"name": "moves", "type": "ndarray", "fullType": "numpy.ndarray"}, {"name": "nn", "type": "module", "fullType": "module"}, {"name": "optim", "type": "module", "fullType": "module"}, {"name": "optimizer", "type": "AdamW", "fullType": "torch.optim.adamw.AdamW"}, {"name": "os", "type": "module", "fullType": "module"}, {"name": "pgn", "type": "module", "fullType": "module"}, {"name": "scaler", "type": "GradScaler", "fullType": "torch.cuda.amp.grad_scaler.GradScaler"}, {"name": "scheduler", "type": "ReduceLROnPlateau", "fullType": "torch.optim.lr_scheduler.ReduceLROnPlateau"}, {"name": "torch", "type": "module", "fullType": "module"}, {"name": "tqdm", "type": "type", "fullType": "type"}, {"name": "train_epoch", "type": "function", "fullType": "function"}, {"name": "train_loader", "type": "DataLoader", "fullType": "torch.utils.data.dataloader.DataLoader"}, {"name": "train_loss", "type": "float", "fullType": "float"}, {"name": "train_test_split", "type": "function", "fullType": "function"}, {"name": "val_acc", "type": "float", "fullType": "float"}, {"name": "val_loader", "type": "DataLoader", "fullType": "torch.utils.data.dataloader.DataLoader"}, {"name": "val_loss", "type": "float", "fullType": "float"}, {"name": "validate", "type": "function", "fullType": "function"}, {"name": "vocab", "type": "ChessVocabulary", "fullType": "ChessVocabulary.ChessVocabulary"}, {"name": "wandb", "type": "module", "fullType": "module"}]
+{"shape": "(61619,)", "count": 61619, "type": "ndarray", "fullType": "numpy.ndarray"}

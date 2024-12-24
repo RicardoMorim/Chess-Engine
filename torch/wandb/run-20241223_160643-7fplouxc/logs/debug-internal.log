@@ -1,0 +1,9 @@
+{"time":"2024-12-23T16:06:46.6402102Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T16:06:46.6407435Z","level":"INFO","msg":"created symlink","path":"c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch\\wandb\\run-20241223_160643-7fplouxc\\logs\\debug-core.log"}
+{"time":"2024-12-23T16:06:48.0769192Z","level":"INFO","msg":"created new stream","id":"7fplouxc"}
+{"time":"2024-12-23T16:06:48.077461Z","level":"INFO","msg":"stream: started","id":"7fplouxc"}
+{"time":"2024-12-23T16:06:48.077461Z","level":"INFO","msg":"writer: Do: started","stream_id":"7fplouxc"}
+{"time":"2024-12-23T16:06:48.078001Z","level":"INFO","msg":"handler: started","stream_id":"7fplouxc"}
+{"time":"2024-12-23T16:06:48.078001Z","level":"INFO","msg":"sender: started","stream_id":"7fplouxc"}
+{"time":"2024-12-23T16:06:49.5567658Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T16:08:11.9854839Z","level":"INFO","msg":"Pausing system monitor"}

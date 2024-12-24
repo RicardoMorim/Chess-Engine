@@ -1,0 +1,42 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.12.6",
+  "startedAt": "2024-12-24T14:15:31.869983Z",
+  "program": "c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch\\train.ipynb",
+  "codePath": "torch\\train.ipynb",
+  "git": {
+    "remote": "git@github.com:RicardoMorim/Chess-Engine.git",
+    "commit": "403ca9b88d21f3f8c3d5ced4122ef2c2232edeb7"
+  },
+  "email": "ricardomorim05@gmail.com",
+  "root": "c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch",
+  "host": "Ricardo",
+  "executable": "c:\\Users\\Ricar\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "codePathLocal": "train.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce GTX 1050",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "255120633856",
+      "used": "236812201984"
+    }
+  },
+  "memory": {
+    "total": "8458129408"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1050",
+      "memoryTotal": "2147483648",
+      "cudaCores": 640,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.7"
+}

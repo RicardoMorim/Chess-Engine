@@ -1,0 +1,11 @@
+PyTorch version: 2.4.1+cu124
+  8%|▊         | 9/110 [00:02<00:23,  4.33it/s]
+Games Parsed: 686
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15048\2505415446.py:2: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  y = torch.tensor(y,dtype=torch.long)
+Using device: cuda
+After data loading Memory: 49.60MB allocated, 54.00MB reserved
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15048\375098289.py:17: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+c:\Users\Ricar\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\optim\lr_scheduler.py:60: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(

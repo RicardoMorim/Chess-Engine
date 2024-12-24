@@ -1,0 +1,21 @@
+{"time":"2024-12-23T16:47:10.3271455Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T16:47:10.3277125Z","level":"INFO","msg":"created symlink","path":"c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch\\wandb\\run-20241223_164710-ox4x72h4\\logs\\debug-core.log"}
+{"time":"2024-12-23T16:47:10.4479814Z","level":"INFO","msg":"created new stream","id":"ox4x72h4"}
+{"time":"2024-12-23T16:47:10.4485615Z","level":"INFO","msg":"stream: started","id":"ox4x72h4"}
+{"time":"2024-12-23T16:47:10.4485615Z","level":"INFO","msg":"handler: started","stream_id":"ox4x72h4"}
+{"time":"2024-12-23T16:47:10.4485615Z","level":"INFO","msg":"sender: started","stream_id":"ox4x72h4"}
+{"time":"2024-12-23T16:47:10.4485615Z","level":"INFO","msg":"writer: Do: started","stream_id":"ox4x72h4"}
+{"time":"2024-12-23T16:47:10.8007519Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T17:33:26.3472623Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:35:09.7294213Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:35:11.947371Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:42:19.5888914Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:42:19.9554227Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:42:20.130159Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:42:20.3415405Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:44:30.3003163Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:44:30.4921158Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:44:30.538213Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:44:30.5529387Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-23T17:44:32.1025483Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-23T17:44:32.1232608Z","level":"INFO","msg":"Pausing system monitor"}

@@ -1,0 +1,87 @@
+Training:   0%|          | 0/45 [00:00<?, ?it/s]C:\Users\Ricar\AppData\Local\Temp\ipykernel_15720\1524367572.py:17: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15720\577620612.py:19: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 1/25:
+Train Loss: 8.8614
+Val Loss: inf, Val Acc: 0.00%
+Epoch 0 Memory: 114.47MB allocated, 170.00MB reserved
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 2/25:
+Train Loss: 7.3937
+Val Loss: inf, Val Acc: 0.00%
+Epoch 1 Memory: 114.47MB allocated, 170.00MB reserved
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 3/25:
+Train Loss: 5.5944
+Val Loss: inf, Val Acc: 0.00%
+Epoch 2 Memory: 114.47MB allocated, 170.00MB reserved
+PyTorch version: 2.4.1+cu124
+Number of files to process: 3
+Collected 1623 valid positions
+Games Parsed: 1623
+Processed 1623 positions into training data
+X shape: (1623, 14, 8, 8), Moves length: 1623
+y shape: 1623
+Using device: cuda
+After data loading Memory: 114.47MB allocated, 146.00MB reserved
+Initializing new model...
+  scaler = torch.cuda.amp.GradScaler()
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15720\577620612.py:4: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+Epoch 1/25:
+Train Loss: 8.7180
+Val Loss: 7.9678, Val Acc: 3.07%
+Saved new best model with loss: 7.9678
+Epoch 0 Memory: 212.69MB allocated, 234.00MB reserved
+Epoch 2/25:
+Train Loss: 6.3830
+Val Loss: 6.8495, Val Acc: 3.68%
+Saved new best model with loss: 6.8495
+Epoch 1 Memory: 212.69MB allocated, 274.00MB reserved
+Epoch 3/25:
+Train Loss: 4.7290
+Val Loss: 6.0695, Val Acc: 12.27%
+Saved new best model with loss: 6.0695
+Epoch 2 Memory: 212.69MB allocated, 274.00MB reserved
+Epoch 4/25:
+Train Loss: 3.1626
+Val Loss: 5.9682, Val Acc: 17.18%
+Saved new best model with loss: 5.9682
+Epoch 3 Memory: 212.69MB allocated, 274.00MB reserved
+PyTorch version: 2.4.1+cu124
+Number of files to process: 3
+Collected 1623 valid positions
+Games Parsed: 1623
+Processed 1623 positions into training data
+X shape: (1623, 14, 8, 8), Moves length: 1623
+y shape: 1623
+Using device: cuda
+After data loading Memory: 212.69MB allocated, 232.00MB reserved
+Loading existing model checkpoint...
+  checkpoint = torch.load("../model/pytorch/chess_model.pth")
+Resuming from epoch 4
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15720\577620612.py:19: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+C:\Users\Ricar\AppData\Local\Temp\ipykernel_15720\577620612.py:19: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+PyTorch version: 2.4.1+cu124
+Number of files to process: 3
+Collected 1623 valid positions
+Games Parsed: 1623
+Processed 1623 positions into training data
+X shape: (1623, 14, 8, 8), Moves length: 1623
+y shape: 1623
+Using device: cuda
+After data loading Memory: 212.70MB allocated, 272.00MB reserved
+Initializing new model...
+  scaler = torch.cuda.amp.GradScaler()
+                                                                                             
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 1/25:
+Train Loss: 4.1001
+Val Loss: inf, Val Acc: 0.00%
+Epoch 0 Memory: 212.70MB allocated, 338.00MB reserved
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 2/25:
+Train Loss: 3.8545
+Val Loss: inf, Val Acc: 0.00%
+Epoch 1 Memory: 212.70MB allocated, 238.00MB reserved

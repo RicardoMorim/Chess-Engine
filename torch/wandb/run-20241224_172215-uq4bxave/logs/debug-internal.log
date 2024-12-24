@@ -1,0 +1,107 @@
+{"time":"2024-12-24T17:22:18.8617802Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T17:22:18.8623359Z","level":"INFO","msg":"created symlink","path":"c:\\Users\\Ricar\\OneDrive\\Ambiente de Trabalho\\Chess-Engine\\torch\\wandb\\run-20241224_172215-uq4bxave\\logs\\debug-core.log"}
+{"time":"2024-12-24T17:22:22.5776191Z","level":"INFO","msg":"created new stream","id":"uq4bxave"}
+{"time":"2024-12-24T17:22:22.5776191Z","level":"INFO","msg":"stream: started","id":"uq4bxave"}
+{"time":"2024-12-24T17:22:22.5776191Z","level":"INFO","msg":"writer: Do: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T17:22:22.5776191Z","level":"INFO","msg":"handler: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T17:22:22.5776191Z","level":"INFO","msg":"sender: started","stream_id":"uq4bxave"}
+{"time":"2024-12-24T17:22:25.8636201Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T17:23:21.5108849Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:38.8112379Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:38.9690405Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:38.9861465Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:39.0027146Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:39.0180918Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:39.0180918Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:39.1707334Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:39.1750447Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:39.1884339Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:39.1906031Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:39.2050695Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:39.2062562Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:39.2222257Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:41.5377551Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:41.5466868Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:41.5499652Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:41.5645529Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:41.568509Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:41.5834954Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:42.3636427Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:42.3824497Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:42.3856255Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:42.3980669Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:42.498687Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:42.5106966Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:26:42.5157724Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:26:42.5280339Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:01.9892947Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:58.9330674Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:58.9403444Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:58.9521259Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:58.9558199Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:58.9667876Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:58.9694272Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:58.9852899Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:58.9928611Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.0594411Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.0594411Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.0594411Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.0594411Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.0594411Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.7150103Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.7300237Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.7320784Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.750114Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.7537363Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.7677329Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:28:59.9587936Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:28:59.9739293Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:00.3228471Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:00.3638439Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:00.3664328Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:00.3793033Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:00.5801294Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:00.5962563Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:00.6006598Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:00.6160819Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:04.2136608Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.3670173Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.3723547Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.383592Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.3880324Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.4005893Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.4032818Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.419473Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.4238055Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.4352861Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.4377696Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.4481386Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.4510166Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.4633361Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.9061103Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.9178143Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.9202267Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.9329135Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.9366349Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.9482357Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:11.950862Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:11.9630747Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:12.3145138Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:12.3297438Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:12.3336058Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:12.3483113Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:12.4299389Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:12.4477503Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:12.4528345Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:29:12.4704848Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-12-24T17:29:49.6606584Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-12-24T17:30:45.6400178Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.22:53183->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2024-12-24T17:31:09.5873712Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp 35.186.228.49:443: connectex: An established connection was aborted by the software in your host machine."}
+{"time":"2024-12-24T17:31:09.5880073Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ricardomorim05-instituto-superior-de-engenharia-do-porto/chess_engine/uq4bxave/file_stream\": dial tcp 35.186.228.49:443: connectex: An established connection was aborted by the software in your host machine."}
+{"time":"2024-12-24T17:31:11.8991838Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ricardomorim05-instituto-superior-de-engenharia-do-porto/chess_engine/uq4bxave/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:14.4621268Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:15.957659Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ricardomorim05-instituto-superior-de-engenharia-do-porto/chess_engine/uq4bxave/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:23.7976596Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:25.5064218Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ricardomorim05-instituto-superior-de-engenharia-do-porto/chess_engine/uq4bxave/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:41.6976018Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2024-12-24T17:31:44.8036088Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ricardomorim05-instituto-superior-de-engenharia-do-porto/chess_engine/uq4bxave/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}

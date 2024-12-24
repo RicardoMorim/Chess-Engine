@@ -1,0 +1,112 @@
+Training:   0%|          | 0/45 [00:00<?, ?it/s]C:\Users\Ricar\AppData\Local\Temp\ipykernel_12248\142315261.py:17: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Training:  38%|███▊      | 17/45 [00:06<00:05,  5.28it/s, loss=nan, lr=3.3e-04]       
+Epoch 1/25:
+Train Loss: -0.8117
+Val Loss: -0.5715, Val Acc: 0.00%
+Saved new best model with loss: -0.5715
+Epoch 0 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 2/25:
+Train Loss: -1.5154
+Val Loss: -2.5106, Val Acc: 0.00%
+Saved new best model with loss: -2.5106
+Epoch 1 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 3/25:
+Train Loss: -54.7435
+Val Loss: -276.1087, Val Acc: 0.00%
+Saved new best model with loss: -276.1087
+Epoch 2 Memory: 113.34MB allocated, 146.00MB reserved
+Epoch 4/25:
+Train Loss: -3816.7306
+Val Loss: -17522.4434, Val Acc: 0.00%
+Saved new best model with loss: -17522.4434
+Epoch 3 Memory: 113.34MB allocated, 146.00MB reserved
+NaN loss detected in batch 7
+NaN loss detected in batch 8
+NaN loss detected in batch 9
+NaN loss detected in batch 10
+NaN loss detected in batch 11
+NaN loss detected in batch 12
+NaN loss detected in batch 13
+NaN loss detected in batch 14
+NaN loss detected in batch 15
+NaN loss detected in batch 16
+NaN loss detected in batch 17
+NaN loss detected in batch 19
+NaN loss detected in batch 20
+NaN loss detected in batch 21
+NaN loss detected in batch 22
+NaN loss detected in batch 23
+NaN loss detected in batch 24
+NaN loss detected in batch 25
+NaN loss detected in batch 26
+NaN loss detected in batch 27
+NaN loss detected in batch 28
+NaN loss detected in batch 29
+NaN loss detected in batch 30
+NaN loss detected in batch 31
+NaN loss detected in batch 32
+NaN loss detected in batch 33
+NaN loss detected in batch 34
+NaN loss detected in batch 35
+NaN loss detected in batch 36
+NaN loss detected in batch 37
+NaN loss detected in batch 38
+NaN loss detected in batch 39
+NaN loss detected in batch 40
+NaN loss detected in batch 41
+NaN loss detected in batch 42
+NaN loss detected in batch 43
+NaN loss detected in batch 44
+Epoch 5/25:
+Train Loss: nan
+Val Loss: nan, Val Acc: 0.00%
+Epoch 4 Memory: 113.34MB allocated, 146.00MB reserved
+NaN loss detected in batch 0
+NaN loss detected in batch 1
+NaN loss detected in batch 2
+NaN loss detected in batch 3
+NaN loss detected in batch 4
+NaN loss detected in batch 5
+NaN loss detected in batch 6
+NaN loss detected in batch 7
+NaN loss detected in batch 8
+NaN loss detected in batch 9
+NaN loss detected in batch 10
+NaN loss detected in batch 11
+NaN loss detected in batch 12
+NaN loss detected in batch 13
+NaN loss detected in batch 15
+NaN loss detected in batch 16
+NaN loss detected in batch 17
+NaN loss detected in batch 18
+NaN loss detected in batch 19
+NaN loss detected in batch 20
+NaN loss detected in batch 21
+NaN loss detected in batch 22
+NaN loss detected in batch 23
+NaN loss detected in batch 24
+NaN loss detected in batch 25
+NaN loss detected in batch 26
+NaN loss detected in batch 27
+NaN loss detected in batch 28
+NaN loss detected in batch 29
+NaN loss detected in batch 30
+NaN loss detected in batch 31
+NaN loss detected in batch 32
+NaN loss detected in batch 33
+NaN loss detected in batch 34
+NaN loss detected in batch 35
+NaN loss detected in batch 36
+NaN loss detected in batch 37
+NaN loss detected in batch 38
+NaN loss detected in batch 39
+NaN loss detected in batch 40
+NaN loss detected in batch 41
+NaN loss detected in batch 42
+NaN loss detected in batch 43
+NaN loss detected in batch 44
+Epoch 6/25:
+Train Loss: nan
+Val Loss: nan, Val Acc: 0.00%
+Epoch 5 Memory: 113.34MB allocated, 146.00MB reserved

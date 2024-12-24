@@ -1,0 +1,11 @@
+                                                                                              
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 1/25:
+Train Loss: 12.0901
+Val Loss: inf, Val Acc: 0.00%
+Epoch 0 Memory: 114.47MB allocated, 146.00MB reserved
+Error during validation: Input type (struct c10::Half) and bias type (float) should be the same
+Epoch 2/25:
+Train Loss: 11.3305
+Val Loss: inf, Val Acc: 0.00%
+Epoch 1 Memory: 114.47MB allocated, 146.00MB reserved
